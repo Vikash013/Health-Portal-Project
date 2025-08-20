@@ -1,0 +1,121 @@
+/* Global Theme */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #333;
+}
+
+/* App Layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #4cafef, #0077cc);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+.header p {
+  margin: 5px 0 0;
+}
+
+/* Navbar */
+.navbar {
+  background: #005fa3;
+  color: white;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+.navbar li {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.navbar li:hover {
+  color: #ffeb3b;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Main Dashboard Grid */
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  flex: 1;
+  width: 100vw;   /* make grid full width */
+  height: 100vh;  /* take full height */
+  box-sizing: border-box;
+}
+
+/* General Pages (Appointments, Prescriptions, etc.) */
+.page {
+  width: 100vw;   /* full width of window */
+  height: 100vh;  /* full height of window */
+  padding: 30px;
+  background: #f9fcff;
+  box-sizing: border-box;
+}
+
+
+
+/* Cards */
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h2 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+/* Highlight Card */
+.highlight {
+  border: 2px solid #0077cc;
+}
+
+/* Buttons */
+.btn {
+  background: #0077cc;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #005fa3;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: #003d66;
+  color: white;
+  padding: 12px;
+}
